@@ -35,6 +35,7 @@ img {
   border: 1px solid steelblue;
   padding: 2px;
   box-shadow: 0 0 30px gray;
+  float: right; /* Float the profile image to the right */
 }
 
 p {
@@ -46,40 +47,18 @@ main {
 }
 
 aside {
-  width: 20rem;
+  width: 24rem;
   margin: 1rem;
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 1rem;
   background-color: #eee;
   color: #333;
   text-align: left;
-  position: relative; /* Absolute positioning */
-}
-
-aside img {
-  width: 200px;
-  height: auto;
-  float: right; /* Float the image to the right */
-}
-
-main img {
-  width: 150px;
-  height: auto;
-  float: right; /* Float profile image to the right */
-}
-
-p {
-  padding: 0;
-}
-
-footer {
-  margin-top: 15px;
-  border-top: 1px solid #000;
-  text-align: center;
+  position: relative; /* Set container, aside, to relative positioning */
 }
 
 aside h2 {
   position: absolute;
-  top: 47px; 
-  left: 150px; 
+  top: 0rem; 
+  left: 1.5rem; 
 }
