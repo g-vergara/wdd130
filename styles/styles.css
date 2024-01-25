@@ -53,16 +53,19 @@ aside {
   background-color: #eee;
   color: #333;
   text-align: left;
+  position: relative; /* Absolute positioning */
 }
 
 aside img {
   width: 200px;
   height: auto;
+  float: right; /* Float the image to the right */
 }
 
 main img {
   width: 150px;
   height: auto;
+  float: right; /* Float profile image to the right */
 }
 
 p {
@@ -73,4 +76,10 @@ footer {
   margin-top: 15px;
   border-top: 1px solid #000;
   text-align: center;
+}
+
+aside h2 {
+  position: absolute;
+  top: 47px; 
+  left: 150px; 
 }
