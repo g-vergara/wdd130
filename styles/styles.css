@@ -4,8 +4,6 @@
   box-sizing: border-box;
 }
 
-/* Class Selectors */
-/* Box Class */
 .box {
   margin: 1rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -59,19 +57,19 @@ aside {
   padding: 1rem;
   background-color: #eee;
   color: #333;
-  text-align: left;
-  position: absolute;
+  text-align: center;
+  position: relative;
+}
+
+aside img {
+  width: 100%; 
+  height: auto;
 }
 
 aside h2 {
   position: relative;
   top: 2rem;
-  left: 5.5rem;
-}
-
-aside img {
-  display: block;
-  margin: 0 auto;
+  left: 0;
 }
 
 .grid {
@@ -93,7 +91,6 @@ aside {
   grid-row: 1/2;
 }
 
-/* Adjusted navigation styles */
 nav {
   background-color: steelblue;
   padding: 0.5rem;
@@ -111,8 +108,13 @@ nav a {
   color: #fff;
 }
 
+header, .grid, footer {
+  margin: 0 auto;
+  max-width: 840px;
+}
+
 .footer {
-  text-align: center; 
-  border-top: 1px solid rgb(0, 0, 0); 
+  text-align: center;
+  border-top: 1px solid #000000; 
   padding: 1rem;
 }
