@@ -27,15 +27,17 @@ nav a {
 
 h1 {
   color: steelblue;
+  border-bottom: 2px solid steelblue; 
+  padding-bottom: 1rem; 
 }
 
 img {
-  width: 150px;
+  width: 250px;
   height: auto;
   border: 1px solid steelblue;
   padding: 2px;
   box-shadow: 0 0 30px gray;
-  float: right; /* Float the profile image to the right */
+  float: top;
 }
 
 p {
@@ -48,7 +50,7 @@ main img {
   border: 1px solid steelblue;
   padding: 2px;
   box-shadow: 0 0 30px gray;
-  float: right
+  float: right;
 }
 
 aside {
@@ -59,11 +61,59 @@ aside {
   background-color: #eee;
   color: #333;
   text-align: left;
-  position: relative; /* Set container, aside, to relative positioning */
+  position: absolute;
 }
 
 aside h2 {
-  position: absolute;
-  top: 0rem; 
-  left: 1.5rem; 
+  position: relative;
+  top: 2rem;
+  left: 5.5rem;
+}
+
+aside img {
+  display: block;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+main {
+  grid-column: 2/3;
+  margin: 1rem;
+}
+
+aside {
+  width: 20rem;
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+/* Adjusted navigation styles */
+nav {
+  background-color: steelblue;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav a {
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.footer {
+  text-align: center; 
+  border-top: 1px solid rgb(0, 0, 0); 
+  padding: 1rem;
 }
