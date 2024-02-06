@@ -18,7 +18,7 @@
 body {
   font-family: var(--paragraph-font);
   max-width: 960px;
-  margin: 0 auto; 
+  margin: 0 auto;
   padding: 20px;
 }
 
@@ -30,14 +30,14 @@ h1, h2, h3, h4, h5, h6 {
 header {
   padding: 20px;
   background-color: var(--secondary-color);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
 }
 
-header div img{
-  width: 12%;
-}
-
-p {
-  padding: 25px;
+.logo img {
+  width: 50px;
+  height: auto;
 }
 
 nav {
@@ -51,7 +51,7 @@ nav a {
   color: var(--nav-link-color);
   text-decoration: none;
   padding: 1rem;
-  text-align: center; 
+  text-align: center;
 }
 
 nav a:link, nav a:visited {
@@ -64,6 +64,11 @@ nav a:hover {
   background-color: var(--nav-hover-background-color);
 }
 
+nav.sociallinks {
+  display:flex;
+  justify-content: right;
+
+}
 
 nav.sociallinks a {
   text-decoration: none;
@@ -86,7 +91,7 @@ nav.sociallinks a img {
 .hero h1,
 .hero article {
   position: absolute;
-  color: #fff; 
+  color: #fff;
 }
 
 .hero h1 {
@@ -99,7 +104,7 @@ nav.sociallinks a img {
   width: 80%;
   top: 20%;
   left: 8%;
-  background-color: rgba(2, 128, 144, 0.8); 
+  background-color: rgba(2, 128, 144, 0.8);
   padding: 20px;
 }
 
@@ -108,4 +113,23 @@ nav.sociallinks a img {
   width: 20%;
   height: auto;
   float: right;
+}
+
+.adventures {
+  display: flex;
+  overflow-x: auto;
+}
+
+.adventures figure {
+  margin: 0 10px;
+}
+
+.adventures img {
+  width: 200px;
+  height: auto;
+}
+
+.adventures figcaption {
+  text-align: center;
+  margin-top: 5px;
 }
