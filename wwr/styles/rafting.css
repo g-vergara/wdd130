@@ -67,7 +67,6 @@ nav a:hover {
 nav.sociallinks {
   display:flex;
   justify-content: right;
-
 }
 
 nav.sociallinks a {
@@ -133,3 +132,51 @@ nav.sociallinks a img {
   text-align: center;
   margin-top: 5px;
 }
+
+/* Additions for Contact Us page */
+.company-info {
+  margin-bottom: 20px;
+}
+
+.employee-profiles {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.employee-profiles .employee {
+  text-align: center;
+}
+
+.employee-profiles img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.contact-form {
+  margin-bottom: 20px;
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form select,
+.contact-form textarea,
+.contact-form button {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contact-form button {
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: var(--accent1-color);
+}
+/* End Contact Us page additions */
