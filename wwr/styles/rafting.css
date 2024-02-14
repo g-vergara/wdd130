@@ -179,4 +179,11 @@ nav.sociallinks a img {
 .contact-form button:hover {
   background-color: var(--accent1-color);
 }
-/* End Contact Us page additions */
+
+.contact-form label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.contact-form textarea {
+  height: 100px;
+}
