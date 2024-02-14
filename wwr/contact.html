@@ -24,6 +24,7 @@
   </header>
 
   <main>
+    <h1>Contact Us</h1> <!-- Added h1 element -->
 
     <section class="employee-profiles">
       <h2>Meet Our Team</h2>
@@ -62,12 +63,12 @@
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
         <label for="purpose">Purpose:</label>
-        <select id="purpose" name="purpose" required>
-          <option value="" selected disabled>Select One</option>
-          <option value="inquiry">General Inquiry</option>
-          <option value="reservation">Reservation Question</option>
-          <option value="suggestion">Website Suggestion</option>
-        </select>
+        <label for="inquiry">General Inquiry</label>
+        <input type="radio" id="inquiry" name="purpose" value="inquiry" required>
+        <label for="reservation">Reservation Question</label>
+        <input type="radio" id="reservation" name="purpose" value="reservation" required>
+        <label for="suggestion">Website Suggestion</label>
+        <input type="radio" id="suggestion" name="purpose" value="suggestion" required>
         <label for="message">Message:</label>
         <textarea id="message" name="message" required></textarea>
         <label for="subscribe">Subscribe to newsletter:</label>
