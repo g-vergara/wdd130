@@ -187,3 +187,122 @@ nav.sociallinks a img {
 .contact-form textarea {
   height: 100px;
 }
+
+.newsletter {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.newsletter form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.newsletter label,
+.newsletter input,
+.newsletter button {
+  margin-bottom: 10px;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+  flex: 1;
+  padding: 10px;
+}
+
+.newsletter button {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.cta {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+}
+
+.cta:hover {
+  background-color: var(--accent1-color);
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.grid-item {
+  padding: 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: var(--secondary-color);
+  padding: 20px;
+  text-align: center;
+}
+
+footer img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+/* Additions for Trips page */
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.trip-description {
+  margin-bottom: 20px;
+}
+
+.trip-description img {
+  width: 100%;
+  height: auto;
+}
+
+.trip-description h2 {
+  color: var(--accent2-color);
+  margin-top: 10px;
+}
+
+.trip-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.trip-table th, .trip-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.trip-table th {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.trip-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.trip-table tbody tr:hover {
+  background-color: #ddd;
+}
